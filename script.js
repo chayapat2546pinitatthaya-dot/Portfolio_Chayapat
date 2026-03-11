@@ -1,10 +1,10 @@
 // JavaScript for Portfolio Functionality
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // 1. Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Highlight Active Navigation Link on Scroll
     const sections = document.querySelectorAll('section');
-    
+
     window.addEventListener('scroll', () => {
         let current = '';
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const fadeElements = document.querySelectorAll('.glass-card, .section-title, .hero-content, .hero-image');
-    
+
     // Add initial fade-in class
     fadeElements.forEach(el => el.classList.add('fade-in'));
 
